@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:background="@drawable/gpc_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/ripple2"
+            android:onClick="onChatClicked"
+            android:text="@string/chat_button"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/button_text_size"
+            app:backgroundTint="@color/background"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/ic_chat"
+            app:iconPadding="20dp"
+            app:iconTint="@color/chat_text" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/ripple2"
+            android:onClick="onLoginClicked"
+            android:text="@string/login_button"
+            android:textAlignment="viewStart"
+            android:textColor="@color/chat_text"
+            android:textSize="@dimen/button_text_size"
+            app:backgroundTint="@color/background"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/ic_lock"
+            app:iconPadding="20dp"
+            app:iconTint="@color/chat_text" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/ripple2"
+            android:onClick="onAnimationClicked"
+            android:text="@string/animation_button"
+            android:textAlignment="viewStart"
+            android:textColor="@color/chat_text"
+            android:textSize="@dimen/button_text_size"
+            app:backgroundTint="@color/background"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/ic_animation"
+            app:iconPadding="20dp"
+            app:iconTint="@color/chat_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>
